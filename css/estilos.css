@@ -15,6 +15,11 @@ body {
 img{
     display: block;
     max-width: 100%;
+    object-fit: cover;
+}
+
+p{
+    line-height: 25px;
 }
 
 .container--flex {
@@ -234,7 +239,9 @@ img{
 
 .welcome{
     text-align: center; 
-    padding: 10px;
+    padding: 30px;
+    max-width: 750px;
+    margin: auto;
 }
 
 .section--title{
@@ -286,7 +293,6 @@ img{
 
 .design--item{
     position: relative;
-
 }
 
 .design--item:before{
@@ -340,7 +346,8 @@ img{
 }
 
 .container-testimonio{
-    margin: 60px 0px;
+    margin: 60px auto;
+    max-width: 650px;
 }
 
 .testimonio--img{
@@ -362,6 +369,10 @@ img{
     color: #EEAD33;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.container-box{
+
 }
 
 .box{
@@ -407,6 +418,8 @@ img{
 
 .suscribete{
     margin: 50px opx;
+    padding: 30px;
+
 }
 
 .form{
@@ -415,6 +428,7 @@ img{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    max-width: 600px;
 }
 
 .form--mail{
@@ -434,5 +448,251 @@ img{
     width: 20%;
     color: white;
     font-size: 1em;
+}
+
+/***************FOOTER*********************/
+.main-footer{
+    background: #282828;
+    color: #828282;     
+}
+
+.main-footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer--title{
+    font-size: 1.8em;
+    color: white;
+    text-transform: uppercase;
+}
+
+.column--50-25{
+    width: 49%;
+    padding: 20px;
+}
+
+.footer--autor{
+    text-align: right;
+    color: #EEAD33;
+    display: block;
+}
+
+.footer--txt .fa-twitter{
+    color: #3bbef5;
+    margin-right: 5px;
+}
+
+.footer--link{
+    color: #EEAD33;
+}
+
+.footer--date{
+    font-size: .8em;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 10px;
+}
+
+.social-icon{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.social-icon  i{
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;    
+}
+
+.social-icon .fa-facebook-f{
+    background: #3b5998;
+}
+
+.social-icon .fa-twitter{
+    background: #3bbef5;
+}
+
+.social-icon .fa-tiktok{
+    background: #ca3e47;
+}
+
+.social-icon .fa-github-square{
+    background: #040000;
+}
+
+.social--link{
+    display: block;
+    text-decoration: none;
+    color: #828282;
+}
+
+.contact-icon{
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon .fas{
+    color: white;
+    display: block;
+    margin-right: 10px;
+}
+
+.copy{
+    background: #211E1E;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+
+}
+
+/**********@-media**************/
+
+@media screen and (min-width: 768px){
+    .menu{
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        width: auto;
+        display: flex;
+        background: none;
+        font-size: .8em;
+    }
+    .menu--item{
+        width: auto;
+    }
+
+    .icon-menu{
+        display: none;
+    }
+
+    .banner{
+        min-height: 500px;
+    }
+
+    banner:before{
+        min-height: 500px;
+    }
+
+    .main{
+        margin-top: 400px;
+    }
+
+    .box{
+        justify-content: center;
+    }
+
+    .box--icon{
+        margin-right: 30px;
+    }    
+}
+
+
+@media screen and (min-width: 1024px) {
+   /* .menu{
+        font-size: 1em;
+
+    }*/
+
+    .container{
+        width: 1000px;
+        margin: auto;
+    }
+
+    .main-title{
+        font-size: 2.8em;
+    }
+
+    .banner{
+        min-height: 600px;
+    }
+
+    .banner:before{
+        min-height: 600px;
+    }
+
+    .banner--title, .banner--txt{
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    .main{
+        margin-top: 500px;
+    }
+
+    .design--item{
+        height: 400px;        
+    }
+
+    .container--design .design--img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .container--design, .container--tips{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .design--item{
+        width: 50%;
+    }
+
+    .container-box{
+        width: 50%;
+    }
+
+    .container--tips{
+        height: 500px;
+    }
+
+    .container--tips .design--item{
+        height: 100%;
+       
+    }
+
+    .container--tips .design--img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .column--50-25{
+        width:24%;
+    }
+
+    
+@media screen and (min-width: 1280px) {
+    .container{
+        width: 1200px;
+        margin: auto;
+    }
+
+    .design--title{
+        font-size: 2.5em;       
+    }   
+
+    .container--item{
+        height: 500px;
+
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .container{
+        width: 1400px;
+        margin: auto;
+    }
+
+    .banner--title, .banner--txt{
+        font-size: 2em;
+    }
 
 }
