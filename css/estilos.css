@@ -198,7 +198,7 @@ p{
 
 
 .banner{
-    background: url(../img/banner.jpg) repeat;
+    background: url(../img/banner.jpg) repeat;    
     min-height: 400px;
     position: absolute;
     top: 0;
@@ -348,6 +348,7 @@ p{
 .container-testimonio{
     margin: 60px auto;
     max-width: 650px;
+   
 }
 
 .testimonio--img{
@@ -371,9 +372,6 @@ p{
     text-transform: uppercase;
 }
 
-.container-box{
-
-}
 
 .box{
     display: flex;
@@ -683,6 +681,7 @@ p{
         height: 500px;
 
     }
+ 
 }
 
 @media screen and (min-width: 1600px) {
